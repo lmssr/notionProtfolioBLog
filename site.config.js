@@ -8,7 +8,7 @@ module.exports = {
 
   // SEO specific (optional)
   defaultSocialImage:
-    'https://res.cloudinary.com/twankruiswijk/image/upload/v1624446915/twan-dev-social_zzbzzv.jpg',
+    'https://images.pexels.com/photos/10166802/pexels-photo-10166802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 
   /* 
     Social media URLS (optional)

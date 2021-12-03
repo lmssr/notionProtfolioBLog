@@ -96,7 +96,7 @@ const Navigation = props => {
           </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/lmssr/notionProtfolioBLog"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -155,7 +155,7 @@ const Navigation = props => {
                 </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/lmssr/notionProtfolioBLog"
                 >
                   View Source
                 </MenuItem>
