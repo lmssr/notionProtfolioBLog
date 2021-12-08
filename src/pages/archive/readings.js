@@ -4,7 +4,7 @@ import { Box, Container, Flex, Heading } from '@chakra-ui/react';
 import { name, description, url, socialImage } from '@/lib/config';
 import { usePaginatedReadings } from '@/lib/readings';
 
-import MainLayout from '@/layouts/MainLayout';
+import Layout from '@/layouts/article';
 import ReadingsList from '@/components/readings/ReadingsList';
 
 export default function Posts() {
@@ -14,7 +14,7 @@ export default function Posts() {
     usePaginatedReadings();
 
   return (
-    <MainLayout>
+    <Layout>
       <Head>
         <title>{name} - all posts</title>
         <meta name="description" content={description} />
@@ -41,6 +41,6 @@ export default function Posts() {
           />
         </Box>
       </Container>
-    </MainLayout>
+    </Layout>
   );
 }

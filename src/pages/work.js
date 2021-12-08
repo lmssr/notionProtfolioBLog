@@ -5,7 +5,7 @@ import { Button, Box, Container, Flex, Heading } from '@chakra-ui/react';
 import { name, description, url, socialImage } from '@/lib/config';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
-import MainLayout from '@/layouts/MainLayout';
+import Layout from '@/layouts/article';
 import PostsList from '@/components/posts/PostsList';
 import ReadingsList from '@/components/readings/ReadingsList';
 
@@ -13,7 +13,7 @@ import Section from '@/components/section'
 
 export default function Home({ posts, readings }) {
   return (
-    <MainLayout>
+    <Layout>
       <Section delay={0.1}>
       <Head>
         <title>{name}</title>
@@ -38,7 +38,7 @@ export default function Home({ posts, readings }) {
 
       </Container>
       </Section>
-    </MainLayout>
+    </Layout>
   );
 }
 

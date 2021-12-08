@@ -20,7 +20,6 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from '../theme-toggle-button'
-import { SunIcon, MoonIcon } from '@chakra-ui/icons';
 import { name } from '@/lib/config';
 import { IoLogoGithub } from 'react-icons/io5'
 
@@ -35,6 +34,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
         _target={_target}
+        _hover={{ fontWeight: 'semibold' }}
         {...props}
       >
         {children}
@@ -58,10 +58,8 @@ const Navigation = props => {
 
   return (
     <Box 
+      position="fixed"
       as="nav" 
-      py={[6, 8]} 
-      mb={8}
-      //position="fixed"
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
@@ -74,12 +72,14 @@ const Navigation = props => {
         maxW="container.md"
         wrap="wrap"
         align="center"
-        justify="space-between">
+        justify="space-between"
+      >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          <Heading as="h1" size="lg">
             <Logo />
           </Heading>
         </Flex>
+
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -107,6 +107,7 @@ const Navigation = props => {
             Source
           </LinkItem>
         </Stack>
+
         {/* <Flex justify="space-between" align="center" px={[null, null, 8]}>
           <NextLink href="/archive/posts" passHref>
             <Link
@@ -130,8 +131,10 @@ const Navigation = props => {
           </NextLink>
           
         </Flex> */}
+
         <Box flex={1} align="right">
         <ThemeToggleButton />
+
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -139,10 +142,9 @@ const Navigation = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-                
               />
               <MenuList
-              bg={useColorModeValue('#ffffff40', '#20202380')}
+              // bg={useColorModeValue('#ffffff40', '#20202380')}
               >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
@@ -168,6 +170,6 @@ const Navigation = props => {
   );
 };
 
-const links = [];
+// const links = [];
 
 export default Navigation;

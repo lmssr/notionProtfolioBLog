@@ -12,17 +12,19 @@ import {
 } from '@chakra-ui/react';
 import { name, description, url, socialImage } from '@/lib/config';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
+import Layout from '@/layouts/article';
+// import Layout from '@/layouts/article'
+import { GridItem } from '../components/grid-item'
+import Section from '../components/section'
 
-import MainLayout from '@/layouts/MainLayout';
 import PostsList from '@/components/posts/PostsList';
 import ReadingsList from '@/components/readings/ReadingsList';
 
-import Section from '../components/section'
-import Paragraph from '../components/paragraph'
-
 export default function Home({ posts, readings }) {
   return (
-    <MainLayout>
+    <Layout>
       <Head>
         <title>{name}</title>
         <meta name="description" content={description} />
@@ -33,23 +35,23 @@ export default function Home({ posts, readings }) {
       </Head>
 
       <Container maxW="container.lg" pb={16}>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        >
         Hello, I&apos;m a full-stack developer based in France!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Luc Mosser
-          </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
         </Box>
+
+        <Box display={{ md: 'flex' }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+            Luc Mosser
+            </Heading>
+            <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          </Box>
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -74,16 +76,9 @@ export default function Home({ posts, readings }) {
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+        I'm Luc, a Web Developer and UX/UI designer from France.
+        Customers have relied on me for design, implementation, and management of their digital products.
+        I work to create innovative solutions that inspire, and foster memorable relationships between brands and their clients. With a focus on branding and UI / Web, I strive to create usable and polished products through passionate and deliberate design.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/work">
@@ -96,7 +91,7 @@ export default function Home({ posts, readings }) {
       <Section delay={0.9}>
         <Box mb={[12, 16]}>
           <Flex align="center" justify="space-between" px={[4, 8]} mb={6}>
-            <Heading as="h2" fontSize="xl">
+            <Heading as="h2" fontSize="xl" variant="section-title">
               My last posts
             </Heading>
           </Flex>
@@ -150,7 +145,7 @@ export default function Home({ posts, readings }) {
         </Box>
       </Section>
       </Container>
-    </MainLayout>
+    </Layout>
   );
 }
 

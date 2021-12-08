@@ -4,7 +4,7 @@ import { Box, Container, Flex, Heading } from '@chakra-ui/react';
 import { name, description, url, socialImage } from '@/lib/config';
 import { usePaginatePosts } from '@/lib/posts';
 
-import MainLayout from '@/layouts/MainLayout';
+import Layout from '@/layouts/article';
 import PostsList from '@/components/posts/PostsList';
 
 import Section from '@/components/section'
@@ -16,7 +16,7 @@ export default function Posts() {
     usePaginatePosts();
 
   return (
-    <MainLayout>
+    <Layout>
       <Section delay={0.1}>
       <Head>
         <title>{name} - all posts</title>
@@ -45,6 +45,6 @@ export default function Posts() {
         </Box>
       </Container>
       </Section>
-    </MainLayout>
+    </Layout>
   );
 }

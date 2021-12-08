@@ -1,6 +1,6 @@
 module.exports = {
   // Basic site information (required)
-  name: 'Jazzy stories',
+  name: 'Luc Mosser',
   domain: '',
   url: 'https://blog-wheat-kappa.vercel.app/',
   description: 'Luc Mosser personal website and blog about life, music, code and more.',

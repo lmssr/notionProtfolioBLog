@@ -8,6 +8,7 @@ import * as Fathom from 'fathom-client';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '@/theme';
 import { domain, fathomCode } from '@/lib/config';
+import MainLayout from '@/layouts/MainLayout';
 
 import { AnimatePresence } from 'framer-motion'
 
@@ -36,6 +37,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={theme}>
+      <MainLayout router={router}>
       <AnimatePresence exitBeforeEnter initial={true}>
       <Head>
         <meta property="og:type" content="website" />
@@ -62,6 +64,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
       </AnimatePresence>
+      </MainLayout>
     </ChakraProvider>
   );
 }

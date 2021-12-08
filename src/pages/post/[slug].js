@@ -4,7 +4,7 @@ import { getPosts, getPostBySlug } from '@/lib/notion';
 import { AspectRatio, Container, Heading } from '@chakra-ui/react';
 import { socialImage, url } from '@/lib/config';
 
-import MainLayout from '@/layouts/MainLayout';
+import Layout from '@/layouts/article';
 import Blocks from '@/components/blocks';
 
 export default function Post({ post }) {
@@ -38,7 +38,7 @@ export default function Post({ post }) {
   };
 
   return (
-    <MainLayout>
+    <Layout>
       <Head>
         <title>{titleContent}</title>
         <meta name="description" content={summaryContent} />
@@ -69,7 +69,7 @@ export default function Post({ post }) {
       <Container maxW="container.md" px={[5, 6, 16]} pb={16}>
         <Blocks blocks={blocks} />
       </Container>
-    </MainLayout>
+    </Layout>
   );
 }
 
