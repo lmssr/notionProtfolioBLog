@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import Image from 'next/image';
 import {
   Button,
   Heading,
@@ -9,6 +10,8 @@ import {
 
 import TextRenderer from '@/components/blocks/TextRenderer';
 import ListSkeleton from '@/components/skeleton/ListSkeleton';
+import { postImageSource } from '../../../site.config';
+
 
 const PostsList = ({ posts, error, isLoadingMore, loadMore, reachedEnd }) => {
   const { colorMode } = useColorMode();
@@ -74,6 +77,7 @@ export default PostsList;
 
 const PostItem = ({ slug, title, summary}) => {
   const { colorMode } = useColorMode();
+  
 
   return (
     <NextLink href={`/post/${slug.plain_text}`} passHref>
@@ -84,14 +88,20 @@ const PostItem = ({ slug, title, summary}) => {
         border="1px"
         borderColor={colorMode === 'dark' ? 'transparent' : 'primaryDark'}
         borderRadius="md"
-        _hover={{ textDecoration: 'none', boxShadow: '5px 5px 0 #EB5753' }}
+        _hover={{ textDecoration: 'none', boxShadow: '#6b46c1 0px 5px 27px -5px' }}
       >
         <Heading as="h2" mb={[2, 4, 6]} fontSize="xl">
-          {title}
+          
+          {title} 
         </Heading>
-
+          
         <TextRenderer content={summary} />
+        <br />
+        <Link _hover={{ fontWeight: 'semibold' }}>
+        Read more ...
+        </Link>
       </Link>
     </NextLink>
   );
 };
+

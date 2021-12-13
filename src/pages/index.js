@@ -109,7 +109,7 @@ export default function Home({ posts, readings }) {
                 size="lg"
                 fontFamily="heading"
                 _active={{ backgroundColor: '#bb3531' }}
-                _hover={{ boxShadow: '2px 2px 0 #880400' }}
+                _hover={{ boxShadow: '#6b46c1 0px 5px 27px -5px' }}
               >
                 All posts
               </Button>
