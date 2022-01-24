@@ -60,7 +60,7 @@ export default function Post({ post }) {
           fontSize={['2xl', '4xl', '5xl']}
           px={[null, null, 16]}
         >
-          {titleContent}
+          {titleContent} 
         </Heading>
 
         {renderFeaturedImage()}

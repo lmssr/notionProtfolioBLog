@@ -16,10 +16,10 @@ export default function Posts() {
     usePaginatePosts();
 
   return (
-    <Layout>
+    <Layout title="Posts">
       <Section delay={0.1}>
       <Head>
-        <title>{name} - all posts</title>
+        {/* <title>{name} - all posts</title> */}
         <meta name="description" content={description} />
         <meta property="og:title" content={`${name} - all posts`} />
         <meta property="og:description" content={description} />

@@ -97,9 +97,14 @@ const PostItem = ({ slug, title, summary}) => {
           
         <TextRenderer content={summary} />
         <br />
-        <Link _hover={{ fontWeight: 'semibold' }}>
+        <Button
+          box
+          colorScheme='white'
+          variant='link'
+          _hover={{transform: 'translateY(-4px)'}}
+          >
         Read more ...
-        </Link>
+        </Button>
       </Link>
     </NextLink>
   );
