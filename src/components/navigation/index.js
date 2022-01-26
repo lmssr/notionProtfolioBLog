@@ -71,8 +71,6 @@ const Navigation = props => {
         p={2}
         maxW="container.md"
         wrap="wrap"
-        align="center"
-        justify="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg">
@@ -88,7 +86,7 @@ const Navigation = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/work" path={path}>
+          <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
           <LinkItem href="/archive/posts" path={path}>

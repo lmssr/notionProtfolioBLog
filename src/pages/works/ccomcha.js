@@ -10,18 +10,16 @@ const Work = () => (
   <Layout title="EffectsArea">
     <Container>
       <Title>
-        Effects Area <Badge>2021-</Badge>
+        C Com Cha Communication <Badge>2021</Badge>
       </Title>
       <P>
-        Effects Area is a music gear platform, where you can find rare and vintage guitar pedals. 
-        It uses a unique concept, and every day, four pedals are randomly selected in the product list, and their prices 
-        drop every hour.
+        C Com Cha Communication is a digital agency based in Strasbourg and working on a simpler and greener digital communication
       </P>
       <List ml={4} my={8}>
         <ListItem ml={4} my={6}>
           <Meta>Website</Meta>
-          <Link href="https://www.effects-area.com/">
-          https://www.effects-area.com/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://www.ccomcha-communication.com/">
+          https://www.ccomcha-communication.com/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         {/* <ListItem>
@@ -48,8 +46,8 @@ const Work = () => (
         </ListItem> */}
       </List>
 
-      <WorkImage src="/images/works/effectsarea2.png" alt="EffectsArea" />
-      <WorkImage src="/images/works/effectsarea1.png" alt="EffectsArea" />
+      <WorkImage src="/images/works/effectsarea2.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/effectsarea1.png" alt="Inkdrop" />
     </Container>
   </Layout>
 )

@@ -58,6 +58,16 @@ module.exports = {
       url: '',
       icon: 'SiTwitch',
     },
+    {
+      name: 'Github',
+      url: 'https://github.com/lmssr',
+      icon: 'SiGithub',
+    },
+    {
+      name: 'Stackoverflow',
+      url: 'https://stackoverflow.com/users/13640675/luc-mosser',
+      icon: 'SiStackoverflow',
+    },
   ],
 
   /* 

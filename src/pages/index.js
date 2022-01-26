@@ -5,6 +5,7 @@ import {
   Button, 
   Box, 
   Container, 
+  Image,
   Flex, 
   Heading,
   Link,
@@ -58,16 +59,16 @@ export default function Home({ posts, readings }) {
           ml={{ md: 6 }}
           textAlign="center"
         >
-          {/* <Image
+          <Image
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="../images/luc.png"
             alt="Profile image"
-          /> */}
+          />
         </Box>
       </Box>
 
@@ -81,7 +82,7 @@ export default function Home({ posts, readings }) {
         I work to create innovative solutions that inspire, and foster memorable relationships between brands and their clients. With a focus on branding and UI / Web, I strive to create usable and polished products through passionate and deliberate design.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/work">
+          <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
             </Button>

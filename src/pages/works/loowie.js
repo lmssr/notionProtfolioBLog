@@ -10,7 +10,7 @@ const Work = () => (
   <Layout title="EffectsArea">
     <Container>
       <Title>
-        Effects Area <Badge>2021-</Badge>
+        Effects Area <Badge>2019</Badge>
       </Title>
       <P>
         Effects Area is a music gear platform, where you can find rare and vintage guitar pedals. 
@@ -48,8 +48,8 @@ const Work = () => (
         </ListItem> */}
       </List>
 
-      <WorkImage src="/images/works/effectsarea2.png" alt="EffectsArea" />
-      <WorkImage src="/images/works/effectsarea1.png" alt="EffectsArea" />
+      <WorkImage src="/images/works/effectsarea2.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/effectsarea1.png" alt="Inkdrop" />
     </Container>
   </Layout>
 )

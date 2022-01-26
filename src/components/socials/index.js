@@ -10,6 +10,8 @@ import {
   SiTiktok,
   SiMedium,
   SiTwitch,
+  SiGithub,
+  SiStackoverflow
 } from 'react-icons/si';
 
 const Socials = () => {
@@ -31,6 +33,10 @@ const Socials = () => {
         return SiMedium;
       case 'SiTwitch':
         return SiTwitch;
+      case 'SiGithub':
+        return SiGithub;
+      case 'SiStackoverflow':
+        return SiStackoverflow;
       default:
         return QuestionOutlineIcon;
     }
@@ -44,7 +50,7 @@ const Socials = () => {
     return (
       <ListItem key={s.name} role="listitem">
         <Link href={s.url} target="_blank" rel="noopener noreferrer">
-          <Icon as={getIcon(s.icon)} />
+          <Icon as={getIcon(s.icon)} _hover={{fontSize: '18px' }}/>
         </Link>
       </ListItem>
     );

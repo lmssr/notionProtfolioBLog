@@ -7,21 +7,19 @@ import P from '../../components/paragraph'
 import Layout from '../../layouts/article'
 
 const Work = () => (
-  <Layout title="EffectsArea">
+  <Layout title="ConseilLGBT">
     <Container>
       <Title>
-        Effects Area <Badge>2021-</Badge>
+        Conseil Québecois <Badge>2019</Badge>
       </Title>
       <P>
-        Effects Area is a music gear platform, where you can find rare and vintage guitar pedals. 
-        It uses a unique concept, and every day, four pedals are randomly selected in the product list, and their prices 
-        drop every hour.
+        It was a Hackathon project, and we had to refresh and rearange the website of the Conseil Québecois LGBT in two days
       </P>
       <List ml={4} my={8}>
         <ListItem ml={4} my={6}>
           <Meta>Website</Meta>
-          <Link href="https://www.effects-area.com/">
-          https://www.effects-area.com/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://www.conseil-lgbt.ca/">
+          https://www.conseil-lgbt.ca/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         {/* <ListItem>
@@ -48,8 +46,7 @@ const Work = () => (
         </ListItem> */}
       </List>
 
-      <WorkImage src="/images/works/effectsarea2.png" alt="EffectsArea" />
-      <WorkImage src="/images/works/effectsarea1.png" alt="EffectsArea" />
+      <WorkImage src="/images/works/conseillgbt.png" alt="ConseilLGBT" />
     </Container>
   </Layout>
 )

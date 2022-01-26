@@ -17,9 +17,9 @@ import thumbEffectsArea from '../../public/images/works/effectsarea.png'
 import thumbCCcomCha from '../../public/images/works/ccomcha.png'
 import thumbBandWizard from '../../public/images/works/bandwizard.png'
 import thumbLoowie from '../../public/images/works/loowie.png'
-// import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-// import thumbStyly from '../public/images/works/styly_eyecatch.png'
-// import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
+import thumbLandingPage from '../../public/images/works/landingpage.png'
+import thumbConseillgbt from '../../public/images/works/conseillgbt.png'
+import thumbRentalife from '../../public/images/works/rentalife.png'
 // import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
 // import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
@@ -32,9 +32,12 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="effectsarea" title="EffectsArea" thumbnail={thumbEffectsArea}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem 
+            id="effectsarea" 
+            title="EffectsArea" 
+            thumbnail={thumbEffectsArea}
+          >
+          A music gear platform, where you can find rare and vintage guitar pedals. 
           </WorkGridItem>
         </Section>
         <Section>
@@ -43,7 +46,7 @@ const Works = () => (
             title="CComCha"
             thumbnail={thumbCCcomCha}
           >
-            Music recommendation app for iOS
+            A digital communication agency
           </WorkGridItem>
         </Section>
 
@@ -53,14 +56,16 @@ const Works = () => (
             title="BandWizard"
             thumbnail={thumbBandWizard}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            A "Tinder" app for musicians who want to join a band 
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="loowie" thumbnail={thumbLoowie} title="Loowie">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem 
+            id="loowie" 
+            thumbnail={thumbLoowie} 
+            title="Loowie"
+          >
+            A footwear E-commerce
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -73,18 +78,22 @@ const Works = () => (
         </Heading>
       </Section>
 
-      {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            id="conseillgbt"
+            thumbnail={thumbConseillgbt}
+            title="Conseil LGBT"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            Refreshing of the website of the Conseil Québécois LGBT 
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
+          <WorkGridItem 
+            id="rentalife" 
+            thumbnail={thumbRentalife} 
+            title="Rent a life"
+          >
             A VR Creative tools for fashion brands
           </WorkGridItem>
         </Section>
@@ -100,11 +109,15 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
+          <WorkGridItem 
+            id="landingpage" 
+            thumbnail={thumbLandingPage} 
+            title="3D Procedural Landing Page"
+          >
+            First creation of procedural 3D world
           </WorkGridItem>
         </Section>
-        <Section delay={0.5}>
+        {/* <Section delay={0.5}>
           <WorkGridItem
             id="freedbtagger"
             thumbnail={thumbFreeDBTagger}
@@ -118,8 +131,8 @@ const Works = () => (
             P2P private file sharing tool with MSN Messenger integration for
             Windows
           </WorkGridItem>
-        </Section> */}
-      {/* </SimpleGrid> */}
+        </Section>*/}
+      </SimpleGrid> 
     </Container>
   </Layout>
 )
