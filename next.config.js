@@ -3,3 +3,7 @@ module.exports = {
     domains: ['images.unsplash.com', 'res.cloudinary.com'],
   },
 };
+
+eslint: {
+  ignoreDuringBuilds: true,
+},
