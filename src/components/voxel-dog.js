@@ -53,14 +53,14 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH 
+      const scale = scH * 0.03 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
         scale,
         -scale,
         0.01,
-        50000
+        5000
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -74,7 +74,7 @@ const VoxelDog = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '../images/houseModel/scene.gltf', {
         receiveShadow: true,
         castShadow: true
       }).then(() => {
@@ -87,21 +87,21 @@ const VoxelDog = () => {
       const animate = () => {
         req = requestAnimationFrame(animate)
 
-        // frame = frame <= 100 ? frame + 1 : frame
+       frame = frame <= 100 ? frame + 1 : frame
 
-        // if (frame <= 100) {
-        //   const p = initialCameraPosition
-        //   const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+       if (frame <= 100) {
+         const p = initialCameraPosition
+         const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-        //   camera.position.y = 10
-        //   camera.position.x =
-        //     p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-        //   camera.position.z =
-        //     p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
-        //   camera.lookAt(target)
-        // } else {
-        //   controls.update()
-        // }
+         camera.position.y = 10
+         camera.position.x =
+           p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+         camera.position.z =
+           p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
+         camera.lookAt(target)
+       } else {
+         controls.update()
+       }
 
         renderer.render(scene, camera)
       }
