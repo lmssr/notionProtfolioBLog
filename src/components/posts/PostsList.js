@@ -62,7 +62,7 @@ const PostsList = ({ posts, error, isLoadingMore, loadMore, reachedEnd }) => {
           mt={[4, 8]}
           size="lg"
           fontFamily="heading"
-          _hover={{ boxShadow: isLoadingMore ? 'unset' : '4px 4px 0 #FBD38D' }}
+          _hover={{ boxShadow: isLoadingMore ? 'unset' : '5px 5px 8px #f6ad55' }}
         >
           {isLoadingMore ? 'Loading...' : 'Load more'}
         </Button>
@@ -88,7 +88,7 @@ const PostItem = ({ slug, title, summary}) => {
         border="1px"
         borderColor={colorMode === 'dark' ? 'transparent' : 'primaryDark'}
         borderRadius="md"
-        _hover={{ textDecoration: 'none', boxShadow: '#6b46c1 0px 5px 27px -5px' }}
+        _hover={{ textDecoration: 'none', boxShadow: '5px 5px 8px #f6ad55' }}
       >
         <Heading as="h2" mb={[2, 4, 6]} fontSize="xl">
           

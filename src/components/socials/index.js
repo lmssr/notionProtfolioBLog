@@ -1,6 +1,7 @@
 import { socials } from '@/lib/config';
+import NextLink from 'next/link';
 import { Icon, List, Link, ListItem, HStack } from '@chakra-ui/react';
-import { QuestionOutlineIcon } from '@chakra-ui/icons';
+import { QuestionOutlineIcon, EmailIcon } from '@chakra-ui/icons';
 import {
   SiFacebook,
   SiTwitter,
@@ -13,6 +14,7 @@ import {
   SiGithub,
   SiStackoverflow
 } from 'react-icons/si';
+import { GrMail } from 'react-icons/gr'
 
 const Socials = () => {
   const getIcon = (icon) => {
@@ -60,6 +62,9 @@ const Socials = () => {
     <List>
       <HStack spacing={6} justify="flex-end">
         {renderSocials}
+      <Link href="mailto:luc.mosser86@gmail.com" pb="1">
+        <EmailIcon _hover={{fontSize: '18px' }}/>
+      </Link>
       </HStack>
     </List>
   );

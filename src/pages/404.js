@@ -5,7 +5,8 @@ import {
   Text,
   Container,
   Divider,
-  Button
+  Button, 
+  useColorModeValue
 } from '@chakra-ui/react'
 
 const NotFound = () => {
@@ -16,7 +17,13 @@ const NotFound = () => {
       <Divider my={6} />
       <Box my={6} align="center">
         <NextLink href="/">
-          <Button colorScheme="teal">Return to home</Button>
+          <Button 
+            // rightIcon={<ChevronRightIcon />}
+            bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
+            color={useColorModeValue('white', '#1a202c')} 
+            _hover={{ transform: 'scale(1.1)' }}
+          >
+          Return to home </Button>
         </NextLink>
       </Box>
     </Container>

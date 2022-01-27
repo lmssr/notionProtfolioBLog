@@ -83,7 +83,12 @@ export default function Home({ posts, readings }) {
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button 
+              rightIcon={<ChevronRightIcon />} 
+              bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
+              color={useColorModeValue('white', '#1a202c')} 
+              _hover={{ transform: 'scale(1.1)' }}
+            >
               My portfolio
             </Button>
           </NextLink>
@@ -105,12 +110,12 @@ export default function Home({ posts, readings }) {
                 as="a"
                 w={['100%', '100%', 'unset']}
                 rightIcon={<ChevronRightIcon />}
-                bg="#FBD38D"
-                color="white"
+                bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
+                color={useColorModeValue('white', '#1a202c')} 
                 size="lg"
                 fontFamily="heading"
-                _active={{ backgroundColor: '#bb3531' }}
-                _hover={{ boxShadow: '#6b46c1 0px 5px 27px -5px' }}
+                // _active={{ backgroundColor: '#bb3531' }}
+                _hover={{ transform: 'scale(1.1)' }}
               >
                 All posts
               </Button>
@@ -132,12 +137,12 @@ export default function Home({ posts, readings }) {
                 as="a"
                 w={['100%', '100%', 'unset']}
                 rightIcon={<ChevronRightIcon />}
-                bg="#FBD38D"
-                color="white"
+                bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
+                color={useColorModeValue('white', '#1a202c')} 
                 size="lg"
                 fontFamily="heading"
-                _active={{ backgroundColor: '#bb3531' }}
-                _hover={{ boxShadow: '2px 2px 0 #880400' }}
+                // _active={{ backgroundColor: '#bb3531' }}
+                _hover={{ transform: 'scale(1.1)' }}
               >
                 View all
               </Button>

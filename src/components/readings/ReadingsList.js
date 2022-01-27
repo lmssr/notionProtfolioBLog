@@ -65,7 +65,7 @@ const ReadingsList = ({
           mt={[4, 8]}
           size="lg"
           fontFamily="heading"
-          _hover={{ boxShadow: isLoadingMore ? 'unset' : '4px 4px 0 #EB5753' }}
+          _hover={{ boxShadow: isLoadingMore ? 'unset' : '5px 5px 8px #f6ad55' }}
         >
           {isLoadingMore ? 'Loading...' : 'Load more'}
         </Button>
@@ -89,7 +89,7 @@ const PostItem = ({ title, url }) => {
         border="1px"
         borderColor={colorMode === 'dark' ? 'transparent' : 'primaryDark'}
         borderRadius="lg"
-        _hover={{ textDecoration: 'none', boxShadow: '5px 5px 0 #EB5753' }}
+        _hover={{ textDecoration: 'none', boxShadow: '5px 5px 8px #f6ad55' }}
       >
         <Flex justify="space-between" align="center">
           <Heading as="h2" fontSize="base">

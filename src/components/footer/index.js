@@ -1,6 +1,5 @@
 import { Box, Container } from '@chakra-ui/react';
 
-import { GrMail } from 'react-icons/gr'
 
 import Socials from '@/components/socials';
 
@@ -9,7 +8,8 @@ const Footer = () => (
     position="absolute" 
     as="footer" 
     // w="100%" 
-    bottom="0"
+    // bottom="0"
+    top="100%"
     py={4}
     css={{ backdropFilter: 'blur(10px)' }}
     pr={130}
