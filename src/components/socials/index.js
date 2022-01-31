@@ -60,7 +60,7 @@ const Socials = () => {
 
   return (
     <List>
-      <HStack spacing={6} justify="flex-end">
+      <HStack spacing={6} justify="center">
         {renderSocials}
       <Link href="mailto:luc.mosser86@gmail.com" pb="1">
         <EmailIcon _hover={{fontSize: '18px' }}/>
