@@ -26,12 +26,12 @@ export default function Home({ posts, readings }) {
   return (
     <Layout>
       <Head>
-        <title>{name}</title>
+        {/* <title>{name}</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={name} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={socialImage} />
+        <meta property="og:image" content={socialImage} /> */}
       </Head>
 
       <Container maxW="container.lg" pb={16}>
