@@ -45,17 +45,16 @@ const MainLayout = ({ children, router }) => {
         <meta name="description" content={description} />
         <meta property="og:title" content={name} />
         <meta property="og:description" content={description} />
-        <meta name="author" content="Takuya Matsuyama" />
-        <meta name="author" content="craftzdog" />
+        <meta name="author" content="Luc Mosser" />
+        <meta name="author" content="lucmosser" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
+        <meta name="twitter:site" content="@SuitUpDev" />
+        <meta name="twitter:creator" content="@SuitUpDev" />
         <meta name="twitter:image" content="/card.png" />
         <meta property="og:site_name" content="Luc Mosser - Homepage" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/card.png" />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={socialImage} />
         {/* <title> Luc Mosser - Homepage</title> */}
