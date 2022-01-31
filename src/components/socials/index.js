@@ -14,7 +14,6 @@ import {
   SiGithub,
   SiStackoverflow
 } from 'react-icons/si';
-import { GrMail } from 'react-icons/gr'
 
 const Socials = () => {
   const getIcon = (icon) => {

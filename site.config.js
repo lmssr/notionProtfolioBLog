@@ -1,14 +1,14 @@
 module.exports = {
   // Basic site information (required)
   name: 'Luc Mosser',
-  domain: '',
-  url: 'https://blog-wheat-kappa.vercel.app/',
+  domain: 'lucmosser.com',
+  url: 'https://www.lucmosser.com/',
   description: 'Luc Mosser personal website and blog about life, music, code and more.',
   fathomCode: 'TBSAIDMS',
 
   // SEO specific (optional)
   defaultSocialImage:
-    'https://images.pexels.com/photos/10166802/pexels-photo-10166802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    'https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
 
   /* 
     Social media URLS (optional)
