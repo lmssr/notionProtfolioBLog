@@ -25,6 +25,7 @@ const Layout = ({ children, title }) => (
           <meta name="twitter:title" content={title} />
           <meta property="og:title" content={title} />
           <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:url" content={url} />
           <meta property="og:image" content={socialImage} />
         </Head>

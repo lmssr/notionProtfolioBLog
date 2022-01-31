@@ -16,7 +16,6 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '@/layouts/article';
-// import Layout from '@/layouts/article'
 import { GridItem } from '../components/grid-item'
 import Section from '../components/section'
 
