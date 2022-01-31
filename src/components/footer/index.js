@@ -1,40 +1,50 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, Stack } from '@chakra-ui/react';
 
 
 import Socials from '@/components/socials';
 
 const Footer = () => (
   <Box 
-    position="absolute" 
+    position="relative" 
     as="footer" 
-    // w="100%" 
-    // bottom="0"
     top="100%"
     py={4}
     css={{ backdropFilter: 'blur(10px)' }}
-    pr={130}
-    pl={130}
-    >
+    // pr={130}
+    // pl={130}
+    align="center"
+  >
     <Container 
       display="flex"
       p={2}
-      maxW="container.md"
+      maxW="fit-content"
       wrap="wrap"
+      align="center"
+    >
+      <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'column', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          align="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
       >
-      <Box 
-        opacity={0.4} 
-        fontSize="sm"
-        pr={5}
-        >
-        &copy; {new Date().getFullYear()} Luc Mosser.  
-      </Box>
-      <Box 
-        px={[null, null, 8]}
-        >
-        <Socials />
-      </Box>
+        <Box 
+          opacity={0.4} 
+          fontSize="sm"
+          >
+          &copy; {new Date().getFullYear()} Luc Mosser.  
+        </Box>
+        <Box 
+          px={[null, null, 8]}
+          align="center"
+          >
+          <Socials/>
+        </Box>
+      </Stack>
     </Container>
   </Box>
+  
 );
 
 export default Footer;
