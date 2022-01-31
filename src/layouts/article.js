@@ -30,7 +30,7 @@ const Layout = ({ children, title }) => (
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@SuitUpDev" />
           <meta name="twitter:description" content={description} />
-          <meta name="twitter:image" content={socialImage} />
+          <meta name="twitter:image" content="https://images.unsplash.com/photo-1643584239394-b29bb3a150e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
         </Head>
       )}
       {children}
