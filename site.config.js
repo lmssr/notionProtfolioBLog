@@ -8,7 +8,7 @@ module.exports = {
 
   // SEO specific (optional)
   defaultSocialImage:
-    'https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+    'https://images.unsplash.com/photo-1575330741514-88046900ba72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80',
 
   /* 
     Social media URLS (optional)

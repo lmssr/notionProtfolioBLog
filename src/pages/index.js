@@ -83,12 +83,26 @@ export default function Home({ posts, readings }) {
         <Box align="center" my={4}>
           <NextLink href="/works">
             <Button 
+              ml={6}
+              mr={6}
               rightIcon={<ChevronRightIcon />} 
               bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
               color={useColorModeValue('white', '#1a202c')} 
               _hover={{ transform: 'scale(1.1)' }}
             >
               My portfolio
+            </Button>
+          </NextLink>
+          <NextLink href="/contact">
+            <Button 
+              ml={6}
+              mr={6}
+              rightIcon={<ChevronRightIcon />} 
+              bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
+              color={useColorModeValue('white', '#1a202c')} 
+              _hover={{ transform: 'scale(1.1)' }}
+            >
+              Contact me
             </Button>
           </NextLink>
         </Box>
