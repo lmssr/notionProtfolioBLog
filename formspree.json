@@ -1,0 +1,8 @@
+{
+    "forms": {
+      "contactForm": {
+        "name": "Contact Form",
+        "actions": [{ "type": "email", "to": "luc.mosser86@gmail.com" }]
+      }
+    }
+  }

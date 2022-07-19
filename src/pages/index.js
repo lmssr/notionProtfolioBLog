@@ -85,6 +85,7 @@ export default function Home({ posts, readings }) {
             <Button 
               ml={6}
               mr={6}
+              mt={10}
               rightIcon={<ChevronRightIcon />} 
               bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
               color={useColorModeValue('white', '#1a202c')} 
@@ -97,6 +98,7 @@ export default function Home({ posts, readings }) {
             <Button 
               ml={6}
               mr={6}
+              mt={10}
               rightIcon={<ChevronRightIcon />} 
               bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
               color={useColorModeValue('white', '#1a202c')} 

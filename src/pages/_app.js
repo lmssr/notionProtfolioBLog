@@ -12,6 +12,8 @@ import MainLayout from '@/layouts/MainLayout';
 
 import { AnimatePresence } from 'framer-motion'
 
+import { FormspreeProvider } from '@formspree/react';
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
@@ -36,6 +38,7 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
+    <FormspreeProvider project="1990429042502795259">
     <ChakraProvider theme={theme}>
       <MainLayout router={router}>
       <AnimatePresence exitBeforeEnter initial={true}>
@@ -62,10 +65,12 @@ function MyApp({ Component, pageProps }) {
           href="/favicons/favicon-16x16.png"
         />
       </Head>
-      <Component {...pageProps} />
+      
+        <Component {...pageProps} />
       </AnimatePresence>
       </MainLayout>
     </ChakraProvider>
+    </FormspreeProvider>
   );
 }
 
