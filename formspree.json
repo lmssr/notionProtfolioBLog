@@ -1,8 +1,17 @@
-{
+  {
     "forms": {
-      "contactForm": {
-        "name": "Contact Form",
-        "actions": [{ "type": "email", "to": "luc.mosser86@gmail.com" }]
+      "contactMe": {
+        "name": "Contact Me",
+        "fields": {
+          "first-name": { "type": "text", "required": false },
+          "last-name": { "type": "text", "required": false },
+          "email": { "type": "email", "required": false },
+          "object": { "type": "text", "required": false },
+          "message": { "type": "text", "required": false }
+        },
+        "actions": [
+          { "type": "email", "to": "luc.mosser86@gmail.com" }
+        ]
       }
     }
   }

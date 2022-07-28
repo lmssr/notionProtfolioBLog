@@ -85,13 +85,25 @@ import { useForm, ValidationError } from '@formspree/react';
 // )
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("contactForm");
+  const [state, handleSubmit] = useForm("contactMe");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return (
+      <Container 
+        mt={20} 
+        maxW='md' 
+        centerContent>
+        <Heading 
+          as="h3" 
+          fontSize={20} 
+          mb={4}>
+        Thanks, I will contact you soon 
+        </Heading>
+      </Container>
+      )
   }
   return (
-      <form onSubmit={handleSubmit}>
-      <Layout title="Contact">
+  <form onSubmit={handleSubmit}>
+  <Layout title="Contact">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Contact
@@ -111,14 +123,24 @@ function ContactForm() {
             </FormControl>
         </Section>
         </SimpleGrid>
+        
         <SimpleGrid columns={[1, 1, 1]} gap={6}>
         <Section delay={0.2}>
         <FormControl isRequired>
                 <FormLabel htmlFor='email'>Email</FormLabel>
-                <Input id='email' placeholder='Email' />
-            </FormControl>
+                <Input 
+                  id='email' 
+                  type='email' 
+                  name='email'
+                  placeholder='Email' />
+                <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors} />
+        </FormControl>
         </Section>
       </SimpleGrid>
+      
       <SimpleGrid columns={[1, 1, 1]} >
         <Section delay={0.3}>
         <FormControl isRequired>
@@ -127,33 +149,41 @@ function ContactForm() {
             </FormControl>
         </Section>
       </SimpleGrid>
+      
       <SimpleGrid columns={[1, 1, 1]} >
         <Section delay={0.4}>
         <FormControl isRequired>
                 <FormLabel htmlFor='message'>Message</FormLabel>
-                <Textarea rows='10' id='message' placeholder='Message' />
+                <Textarea 
+                  rows='10' 
+                  id='message' 
+                  name='message'
+                  placeholder='Message' />
             </FormControl>
         </Section>
       </SimpleGrid>
+      
       <SimpleGrid columns={[1, 1, 1]} gap={6} >
         <Section delay={0.5}>
             <Button 
+              type="submit" 
+              disabled={state.submitting}
               ml={6}
               mr={6}
               rightIcon={<ChevronRightIcon />} 
               bgColor={useColorModeValue('#805ad5', '#fbd38d')} 
               git color={useColorModeValue('white', '#1a202c')} 
-              _hover={{ transform: 'scale(1.1)' }}
-              type='submit'
-            >
+              _hover={{ transform: 'scale(1.1)' }} >
               Submit
             </Button>
         </Section>
       </SimpleGrid>
     </Container>
   </Layout>
-    </form>
+  </form>
   );
 }
+
+
 export default ContactForm
 export { getServerSideProps } from '../components/chakra'

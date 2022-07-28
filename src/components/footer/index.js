@@ -7,7 +7,7 @@ const Footer = () => (
   <Box 
     position="relative" 
     as="footer" 
-    top="100%"
+    //top="100%"
     py={4}
     css={{ backdropFilter: 'blur(10px)' }}
     // pr={130}
@@ -16,6 +16,10 @@ const Footer = () => (
   >
     <Container 
       display="flex"
+      // position="absolute"
+      // bottom={0}
+      // right={0}
+      // left={0}
       p={2}
       maxW="fit-content"
       wrap="wrap"

@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
-    <FormspreeProvider project="1990429042502795259">
+    <FormspreeProvider project="FORMSPREE_ID">
     <ChakraProvider theme={theme}>
       <MainLayout router={router}>
       <AnimatePresence exitBeforeEnter initial={true}>
@@ -67,6 +67,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       
         <Component {...pageProps} />
+      
       </AnimatePresence>
       </MainLayout>
     </ChakraProvider>
