@@ -1,8 +1,16 @@
-To create this Portfolio/BLog, I used an excellent article written by https://dev.to/twankrui/setup-your-own-notion-powered-blog-with-nextjs-4034
+To create this Portfolio/BLog, I used an excellent article written by [Twan Kruiswijk](https://www.twankrui.com/)
 Don't hesitate to check his work ! 
 
 The project use NextJs for the Front-End Part, and Notion as the CMS
 
+You can also go directly on my Portfolio to see it live ! 
+https://lucmosser.com/
+
+---
+
+# If you want to use this template for your project
+
+#
 
 ## Getting Started
 
