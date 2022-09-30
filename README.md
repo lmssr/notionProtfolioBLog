@@ -1,4 +1,8 @@
-Blion is a blog template that uses NextJS as a front-end and Notion as its CMS via the official API. This is also the repository for my blog [twan.dev](https://twan.dev), so you can check it out running in production.
+To create this Portfolio/BLog, I used an excellent article written by https://dev.to/twankrui/setup-your-own-notion-powered-blog-with-nextjs-4034
+Don't hesitate to check his work ! 
+
+The project use NextJs for the Front-End Part, and Notion as the CMS
+
 
 ## Getting Started
 
